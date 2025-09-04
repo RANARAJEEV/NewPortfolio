@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import Model2 from "./Model2"; // background 3D model
+import Model2 from "./Model2"; 
 
 const HeroSection = () => {
   return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
       <div className="z-10 mt-10 md:mt-0 relative flex justify-center">
         <div className="relative w-48 h-56 sm:w-64 sm:h-72 md:w-72 md:h-80 lg:w-80 lg:h-96 hex-wrapper">
           <img
-            src="/images/R1logo.png" // put image in public folder
+            src="/images/R1logo.png" 
             alt="profile"
             className="w-full h-full object-cover rounded-lg"
           />
