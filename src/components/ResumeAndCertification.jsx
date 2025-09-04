@@ -45,12 +45,12 @@ const ResumeAndCertification = () => {
           </h2>
           <div className="flex flex-col items-center space-y-6 relative">
             <img
-              src="../src/assets/images/Resume.jpg"
+              src="/images/Resume.jpg"
               alt="Resume Preview"
               className="w-full max-w-3xl rounded-lg shadow-lg transform hover:scale-105 transition duration-500 relative z-0"
             />
             <a
-              href="../src/assets/images/RAJEEVRESUME.pdf"
+              href="/images/RAJEEVRESUME.pdf"
               download
               className="px-6 py-3 bg-blue-600 text-white font-ubntu mt-[20px] font-semibold rounded-lg shadow-md hover:bg-blue-700 transition relative z-10"
             >
@@ -79,23 +79,23 @@ const ResumeAndCertification = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               {
-                src: "../src/assets/images/IoT.jpg",
+                src: "/images/IoT.jpg",
                 title: "Introduction To Internet Of Things",
               },
               {
-                src: "../src/assets/images/GE.png",
+                src: "/images/GE.png",
                 title: "GeoTechnical Engineering",
               },
               {
-                src: "../src/assets/images/SoftSkill.png",
+                src: "/images/SoftSkill.png",
                 title: "Soft Skills",
               },
               {
-                src: "../src/assets/images/POaM.png",
+                src: "/images/POaM.png",
                 title: "Public Organization And Management",
               },
               {
-                src: "../src/assets/images/AaC.png",
+                src: "/images/AaC.png",
                 title: "Air Pollution And Control",
               },
             ].map((cert, index) => (
@@ -157,12 +157,12 @@ const ResumeAndCertification = () => {
               engineering, and scalable applications.
             </p>
             <img
-              src="../src/assets/images/Offer.jpg"
+              src="/images/Offer.jpg"
               alt="Internship Offer"
               className="w-full max-w-lg rounded-lg shadow-lg transform hover:scale-105 transition duration-500 relative z-0"
             />
             <a
-              href="../src/assets/images/RAJEEVSINGHOFFERLETTER.pdf"
+              href="/images/RAJEEVSINGHOFFERLETTER.pdf"
               download
               className="px-6 py-3 font-ubntu bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition relative z-10"
             >

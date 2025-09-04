@@ -65,7 +65,7 @@ const visibleTools = showAllTools ? tools : tools.slice(0, 12);
                      overflow-hidden"
     >
         <img
-            src="../src/assets/images/Rlogo.png"
+            src="/images/Rlogo.png"
             alt="Profile"
             className="w-84 h-95 transition-transform duration-300 ease-out hover:scale-105"
           />
