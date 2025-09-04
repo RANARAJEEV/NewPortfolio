@@ -1,0 +1,20 @@
+@font-face {
+  font-family: bring;
+  src: url("../src/assets/fonts/Bring\ Race.ttf");
+}
+@font-face {
+  font-family: mery;
+  src: url("../src/assets/fonts/Merry\ Xmas.ttf");
+}
+@font-face {
+  font-family: ubntu;
+  src: url("../src/assets/fonts/Ubuntu-Regular.ttf");
+}
+@import "tailwindcss"; 
+
+@theme{
+  --font-mery: mery,"sans-serif";
+  --font-bring: bring,"sans-serif";
+  --font-ubntu: ubntu,"sans-serif";
+}
+
