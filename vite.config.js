@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    
   ],
+  
+server: {
+    host: true, // allows external access
+    port: 5173, // your port
+    strictPort: true,
+    allowedHosts: 'all'
+  }
+
 })

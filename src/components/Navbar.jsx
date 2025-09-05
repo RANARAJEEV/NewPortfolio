@@ -34,6 +34,7 @@ export default function Navbar() {
       });
     }
   }, [isOpen]);
+  const handleLinkClick = () => setIsOpen(false);
 
   return (
     <nav className=" tracking-widest shadow-md fixed w-full top-0  left-0 z-50">
@@ -41,15 +42,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           
           {/* Logo */}
-          <div className="mont2 flex-shrink-0 text-2xl font-bold text-[rgba(148,23,23,0.78)]">
-            <Link to="/" className="font-mery  ">RAJEEV SINGH</Link>
+          <div className="mont2 flex-shrink-0 text-2xl font-bold ">
+            <Link to="/" className="font-mery text-[rgba(43,243,200,0.78)] ">RAJEEV SINGH</Link>
           </div>
 
           {/* Desktop Menu */}
           <div  id ="montp"className="  hidden lg:flex space-x-8">
-            <Link to="/Project" className=" font-mery text-gray-700 hover:text-[#5BBBDC] mont">PROJECT</Link>
-            <Link to="/About" className=" font-mery text-gray-700 hover:text-[#5BBBDC] mont">PROFILE & PROFICIENCY</Link>
-            <Link to="/Resume" className=" font-mery text-gray-700 hover:text-[#5BBBDC] mont">RESUME & CERTIFICATIONS</Link>
+            <Link to="/Project" className=" font-mery text-[#993D93] hover:text-[#5BBBDC] mont">PROJECT</Link>
+            <Link to="/About" className=" font-mery text-[#993D93] hover:text-[#5BBBDC] mont">PROFILE & PROFICIENCY</Link>
+            <Link to="/Resume" className=" font-mery text-[#993D93] hover:text-[#5BBBDC] mont">RESUME & CERTIFICATIONS</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,9 +75,9 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="lg:hidden shadow-lg overflow-hidden"
           >
-            <Link to="/projects" className="font-mery block px-4 py-2 text-gray-700 hover:bg-blue-50 mont">PROJECT</Link>
-            <Link to="/profile" className="font-mery block px-4 py-2 text-gray-700 hover:bg-blue-50 mont">PROFILE & PROFICIENCY</Link>
-            <Link to="/Resume" className="font-mery block px-4 py-2 text-gray-700 hover:bg-blue-50 mont">RESUME & CERTIFICATIONS</Link>
+            <Link to="/Project" onClick={handleLinkClick} className="font-mery block px-4 py-2 text-[#993D93] hover:bg-blue-50 mont">PROJECT</Link>
+            <Link to="/About" onClick={handleLinkClick} className="font-mery block px-4 py-2 text-[#993D93] hover:bg-blue-50 mont">PROFILE & PROFICIENCY</Link>
+            <Link to="/Resume" onClick={handleLinkClick} className="font-mery block px-4 py-2 text-[#993D93] hover:bg-blue-50 mont">RESUME & CERTIFICATIONS</Link>
           </motion.div>
         )}
       </AnimatePresence>

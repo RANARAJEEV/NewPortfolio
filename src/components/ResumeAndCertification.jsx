@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 gsap.registerPlugin(ScrollTrigger);
 
 const ResumeAndCertification = () => {
@@ -31,16 +31,16 @@ const ResumeAndCertification = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center px-6 md:px-16 pt-[160px] bg-gray-900 lg:px-32 py-10 space-y-16 text-white">
+    <div className="flex flex-col items-center w-full pt-[160px] min-h-screen overflow-x-hidden bg-gray-900 text-white px-4 sm:px-6 lg:px-12 py-12">
       <div
         ref={containerRef}
-        className="flex flex-col items-center w-full space-y-16 text-white 
-               bg-white/10 backdrop-blur-lg border border-white/20 
-               shadow-lg rounded-2xl p-8 md:p-12"
+        className="flex flex-col items-center w-full max-w-7xl space-y-16 
+           bg-white/10 backdrop-blur-lg border border-white/20 
+           shadow-lg rounded-2xl p-4 sm:p-6 md:p-10 lg:p-12"
       >
         {/* Resume Section */}
         <section className="w-full text-center">
-          <h2 className="text-3xl font-bold mb-6 text-blue-400 font-bring">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-blue-400 font-bring">
             MY RESUME
           </h2>
           <div className="flex flex-col items-center space-y-6 relative">
@@ -68,7 +68,7 @@ const ResumeAndCertification = () => {
 
         {/* Certifications Section */}
         <section className="w-full text-center border-b border-gray-700 pb-12">
-          <h2 className="text-3xl font-bold mb-6 text-blue-400 font-bring">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-blue-400 font-bring">
             MY CERTIFICATES
           </h2>
           <p className="mb-8 font-ubntu text-gray-300">
@@ -137,7 +137,7 @@ const ResumeAndCertification = () => {
 
         {/* Internship Section */}
         <section className="w-full text-center">
-          <h2 className="text-3xl font-bold mb-6 font-bring text-blue-400">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 font-bring text-blue-400">
             INTERNSHIP EXPERIENCE
           </h2>
           <div className="max-w-3xl mx-auto flex flex-col items-center space-y-6 relative">
@@ -173,18 +173,25 @@ const ResumeAndCertification = () => {
 
         {/* Contact Section */}
         <section className="w-full text-center bg-gray-800 py-10 rounded-lg shadow-md">
-          <h2 className="text-3xl font-bold font-bring mb-6 text-blue-400">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-bring mb-6 text-blue-400">
             CONTACT ME
           </h2>
           <p className="text-gray-300 font-ubntu mb-4">
             Interested in collaborating or learning more? Get in touch!
           </p>
-          <p className="text-lg font-ubntu font-semibold tracking-wider">
-            📧 ranarajeevsingh1540@gmail.com
-          </p>
-          <p className="text-lg font-ubntu font-semibold tracking-wider">
-            📞 +91 9354507377
-          </p>
+          <a href="mailto:ranarajeevsingh1540@gmail.com"
+            className="flex items-center gap-2 justify-center hover:text-red-600 transition"
+          >
+            <span>📧 ranarajeevsingh1540@gmail.com</span>
+          </a>
+
+          <a
+            href="tel:+919354507377"
+            className="flex items-center gap-2 justify-center hover:text-green-600 transition"
+          >
+            <span>📞 +91 9354507377</span>
+          </a>
+
           <div className="mt-6 font-ubntu flex justify-center space-x-6">
             <a
               href="https://github.com/RANARAJEEV"
