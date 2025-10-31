@@ -2,6 +2,10 @@
 # 🌐 Personal Portfolio Website 
 This repository contains the source code for my personal portfolio website, a modern and interactive platform designed to showcase my skills, certifications, projects, and professional journey. Built with React.js, Tailwind CSS, Framer Motion, GSAP, Three.js, and React Three Fiber, it blends smooth animations, immersive 3D visuals, and responsive design into a professional digital presence.
 
+
+ portfolio link is :- 
+  https://68ba99ed52ff786384baf59e--rajeesingh.netlify.app/
+ 
 🔹 Key Highlights
 
 Resume Section – A detailed view of my academic background, technical expertise, and professional skills, with an option to download my resume.
